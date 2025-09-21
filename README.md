@@ -9,7 +9,7 @@ When all four Baskets have been lost, the game is over.
 
 Changes Made to the Game
 - Added a home screen, where the player must click Start to begin the game.
-- Added a game over screen with two options: Try Again or Quit.
+- Added a game over screen with two options: Retry or Quit.
 - Added an object the player must avoid; catching it with the basket results in an instant game over.
 - Added rounds that trigger when the player reaches a certain point threshold, increasing the speed of the tree.
 - Updated score display.
