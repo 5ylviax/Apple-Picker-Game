@@ -14,10 +14,6 @@ Changes Made to the Game
 - Added rounds that trigger when the player reaches a certain point threshold, increasing the speed of the tree.
 - Updated score display.
 
-Current Issue
-- In the hierarchy → Canva → RoundCheck (legacy text), rounds are unable to be displayed after building and publishing.
-However it works perfectly fine applicatoin mode and pressing the play putton in unity  version 2021.3.33f1
-
 Link to game 
 https://play.unity.com/en/games/4457aea4-4d8d-4469-b4ed-d5d765d37f00/apple-picker
 
