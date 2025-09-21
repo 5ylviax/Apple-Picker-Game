@@ -16,8 +16,16 @@ Changes Made to the Game
 
 Current Issue
 - In the hierarchy → Canva → RoundCheck (legacy text), rounds are unable to be displayed after building and publishing.
+However it works perfectly fine applicatoin mode and pressing the play putton in unity  version 2021.3.33f1
 
 Link to game 
 https://play.unity.com/en/games/4457aea4-4d8d-4469-b4ed-d5d765d37f00/apple-picker
 
+## Known Issues
 
+Round Display Bug
+In the hierarchy → Canva → RoundCheck (legacy text), rounds are not displayed after building and publishing.
+
+✅ Works correctly in Play Mode inside Unity (tested on Unity 2021.3.33f1).
+
+❌ Fails to display in the built/published version.
