@@ -43,10 +43,10 @@ public class ApplePicker : MonoBehaviour
         basketList.RemoveAt(basketIndex);
         Destroy(basketGO);
 
-        // If there are no Baskets left, restart the game
+        // If there are no Baskets left, game over menu
         if (basketList.Count == 0)
         {
-            SceneManager.LoadScene("_Scene_0");
+            SceneManager.LoadScene("GameOver");
         }
     }
 

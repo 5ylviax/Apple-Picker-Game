@@ -18,6 +18,17 @@ public class ScoreCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        uiText.text = score.ToString("#,0");  
+        uiText.text = score.ToString("#,0");
+    }
+    public void AddScore(int amount)
+    {
+        // Update the score variable
+        score += amount;
+        
+        // Call the RoundsCheck method to see if the round needs to be updated
+        if (RoundsCheck.Instance != null)
+        {
+            RoundsCheck.Instance.CheckLevelProgress(score);
+        }
     }
 }

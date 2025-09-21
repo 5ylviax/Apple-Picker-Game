@@ -33,6 +33,8 @@ public class AppleTree : MonoBehaviour
     {
         GameObject apple = Instantiate<GameObject>(applePrefab);
         apple.transform.position = transform.position;
+        float delay = RoundsCheck.Instance.GetDropDelay();
+        delay = Mathf.Max(0.2f, delay); // prevent delay from becoming negative
         Invoke("DropApple", appleDropDelay);
     }
     void DropRottenApple()

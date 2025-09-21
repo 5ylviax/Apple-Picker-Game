@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class HighScore : MonoBehaviour
 {
     static private Text _UI_TEXT;
-    static private int _SCORE = 1000;
+    static private int _SCORE = 0;
+    public int track_score = _SCORE;
     private Text txtCom; // txtCom is a reference to this GO's Text Component
 
     void Awake()
