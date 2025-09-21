@@ -11,7 +11,7 @@ public class RoundsCheck : MonoBehaviour
 
     public int currentRound = 1;
     public int maxRounds = 4;
-    public TMP_Text roundText; // TMP text UI element
+    public Text roundText; // TMP text UI element
     public float baseDropDelay = 1f;
     public float speedIncrease = 0.2f;
 
@@ -19,10 +19,19 @@ public class RoundsCheck : MonoBehaviour
     {
         if (Instance != null && Instance != this)
         {
-            Destroy(gameObject); // prevent duplicates
+            Destroy(gameObject);
             return;
         }
         Instance = this;
+
+        if (roundText == null)
+        {
+            roundText = GetComponent<Text>(); // tries to find TMP_Text on the same GameObject
+            if (roundText == null)
+            {
+                Debug.LogError("No TMP_Text found on RoundsCheck GameObject!");
+            }
+        }
     }
 
     private void Start()
