@@ -1,5 +1,5 @@
 # Apple-Picker
-## Apple Picker Game in C# using Unity
+## Apple Picker Game in C# using Unity 
 
 
 Apple picker is based on the classic Atari game Kaboom!. In the game, an AppleTree moves back and forth dropping
@@ -12,7 +12,7 @@ Changes Made to the Game
 - Added a game over screen with two options: Retry or Quit.
 - Added an object the player must avoid; catching it with the basket results in an instant game over.
 - Added rounds that trigger when the player reaches a certain point threshold (every 500 points), increasing the speed of the tree.
-- Updated score display.
+- Updated score display
 
 
 Link to game 
